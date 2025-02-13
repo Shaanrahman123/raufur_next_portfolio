@@ -44,8 +44,8 @@ function Education() {
 
           <div>
             <div className="flex flex-col gap-6">
-              {educations.map((education) => (
-                <div className="p-3 relative text-white">
+              {educations.map((education, index) => (
+                <div key={index} className="p-3 relative text-white">
                   <Image
                     src="/blur-23.svg"
                     alt="Hero"

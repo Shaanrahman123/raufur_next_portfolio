@@ -42,8 +42,9 @@ function Experience() {
 
           <div>
             <div className="flex flex-col gap-6">
-              {experiences.map((experience) => (
+              {experiences.map((experience, idex) => (
                 <div
+                  key={idex}
                   className="p-3 relative"
                   // onClick={() => router.push(`${experience?.url}`)}
                 >
